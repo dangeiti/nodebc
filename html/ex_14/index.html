@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+
+    <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+        
+        <fieldset>
+
+            <legend>User Form</legend>
+            <label>Username:</label>
+            <input type="text" name="username" size="30" maxlength="12">
+            <label>Password:</label>
+            <input type="password" size="30" maxlength="8" placeholder="password">
+
+            <p>Select your favourite superheroes</p>
+            <label>Superhero lists</label><br>
+            <input type="radio" name="hero" value="batman"> Batman<br>
+            <input type="radio" name="hero" value="superman" checked> Superman<br>
+            <input type="radio" name="hero" value="flash"> Flash
+
+            <p>Select your favourite video game</p>
+            <label>Superhero lists</label><br>
+            <input type="checkbox" name="videogames" value=" fifa" checked> Fifa<br>
+            <input type="checkbox" name="videogames" value="nhl"> NHL<br>
+            <input type="checkbox" name="videogames" value="resident evil"> Resident Evil<br>
+            <input type="checkbox" name="videogames" value="uncharted" checked> Uncharted<br>
+
+            <input type="hidden" name="userid" value="2300">
+
+            <input type="image" name="login" src="img/Ldog_1.jpg" height="120" width="120"><br>
+
+            <label for="birthday">Enter your birthday</label><br>
+            <input type="date" value="birthday" name="birthday" id="birthday">
+
+            <label for="emailadd">Enter your email</label><br>
+            <input type="email" value="email" name="email" id="emailadd">
+
+            <label for="mysite">Enter my website address</label><br>
+            <input type="url" value="url" name="url" id="mysite">
+
+            <input type="submit">
+
+        </fieldset>
+
+    </form>
+
+    <form action="https://www.google.ca/search">
+        <label for="search">Search</label>
+        <input type="search" name="q" id="search">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
