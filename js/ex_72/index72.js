@@ -5,5 +5,4 @@ while (number <= 13) {
     console.log(asterisk);
     asterisk = asterisk + '*';
     number++;
-
 }
