@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learning browser api</title>
+        <script>
+            // You can add your JavaScript code here!
+            alert('This program adds all the numbers you input');
+
+            let number = [];
+
+            while(window.confirm('Want to type a number?')){
+                chosenNumber = parseInt(prompt('Please type a number'));
+                number.push(chosenNumber)
+            }
+            const reducer = (accumulator, currentValue) => accumulator + currentValue;
+            let result = number.reduce(reducer)
+            let avg = result / number.length;
+
+            alert(`The result so far is: ${result}`);
+            alert(`The user input ${number.length} numbers`);
+            alert(`The average is: ${avg}`)
+            
+        </script>
+    </head>
+    <body>
+        <h1>8th Assignment for server!</h1>
+    </body>
+</html>

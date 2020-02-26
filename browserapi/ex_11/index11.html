@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learning browser api</title>
+        <script defer>
+            // You can add your JavaScript code here!
+            let username = prompt('Enter username');
+            let password = prompt('Enter password');
+
+            alert(`Welcome ${username}`)
+
+            let log = setTimeout(function(){
+                let confirm = window.confirm('Do you still want to be logged?')
+
+                if(confirm){
+                    alert(`${username} your session has been restored`)
+                }else {
+                    alert(`${username} your session has expired`)
+                }
+            }, 10000)
+          </script>
+    </head>
+    <body>
+        <h1>11th Assignment for server!</h1>
+    </body>
+</html>

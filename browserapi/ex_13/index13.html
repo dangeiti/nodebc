@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learning browser api</title>
+        <script>
+            // You can add your JavaScript code here!
+            let sec = prompt('Input the number of seconds that you would like to stay in our site');
+
+                let repeat = function(){
+
+                    console.log(`${sec--} seconds passed since you opened this site!`)
+                    if(sec == 0){
+                        console.log('Your session has expired, come again soon!')
+                        clearInterval(time)
+                    }
+                }
+
+                let time = setInterval(repeat, 1000)
+
+          </script>
+    </head>
+    <body>
+        <h1>13th Assignment for server!</h1>
+    </body>
+</html>
