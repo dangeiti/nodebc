@@ -1,0 +1,19 @@
+extends ./layout.pug
+block content
+
+    div.main-container
+        div.main-header
+            h1 This site only shows information about specific category of a movie
+        hr
+        each sortedMovie in sortedMovies
+            div.movie-container
+                h2= "Title: " + sortedMovie.title
+                h2= "Description: " + sortedMovie.description
+                h2= "Category: " + sortedMovie.category
+                h2= "Rating: " + sortedMovie.rating
+                h2= "Date Created: " + sortedMovie.created
+            hr
+
+        a(href="/" class="btn btn-info margin-bottom") Go back
+
+

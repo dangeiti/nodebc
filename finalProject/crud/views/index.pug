@@ -1,0 +1,17 @@
+extends ./layout.pug
+
+block content
+    a(href="/create" class="btn btn-primary margin-right") Create Movie
+    a(href="/categories" class="btn btn-info margin-right") Find by Specific Category
+    a(href="/rating" class="btn btn-info margin-right") Find by Specific Rating
+    a(href="/deleteAll" class="btn btn-danger") Delete all movies
+
+    each movie in movies
+        .card
+        div.movie-container
+            a(href="/movie/" + movie._id )
+                h2= "Title: " + movie.title
+                h2= "Description: " + movie.description
+                h2= "Category: " + movie.category
+                h2= "Rating: " + movie.rating
+                h2= "Date Created: " + movie.created

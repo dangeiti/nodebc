@@ -1,0 +1,16 @@
+extends ./layout.pug
+block content
+  div.main-container.margin-bottom
+    h1 This site shows selected movie information
+    hr
+    h2= "Title: " + selectedMovie.title
+    h2= "Description: " + selectedMovie.description
+    h2= "Category: " + selectedMovie.category
+    h2= "Rating: " + selectedMovie.rating
+    h2= "Date Created: " + selectedMovie.created
+
+  a(href="/update/" + selectedMovie._id class="btn btn-info margin-right") Update Movie
+  a(href="/delete/" + selectedMovie._id class="btn btn-danger margin-right") Delete Movie 
+  a(href="/" class="btn btn-info margin-right") Go back
+          
+

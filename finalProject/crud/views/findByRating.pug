@@ -1,0 +1,11 @@
+extends ./layout.pug
+block content
+  h1 This is a form that you can use to find Movie by Specific Rating
+  form(method='POST' action='/individualRating' class="movie-container")
+    div.form-group
+      p Select Specific Rating of Movie to Find from 1 to 5
+      input(type="number" id="quantity" name="rating" min="1" max="5" value="0")
+      label(for='quantity')
+    button.btn.btn-primary.fullWidth(type='submit') Find
+
+
